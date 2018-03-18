@@ -12,11 +12,12 @@ client.on('message', message => {
                message.channel.send("We will defeat the Galra!")
       }
 
--client.on('message', message => {
--    if (message.content === 'ping') {
--    	message.reply('pong');
--  	}
+});
 
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('pong');
+  	}
 });
 
 
