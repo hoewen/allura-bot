@@ -6,6 +6,8 @@ client.on('message', message => {
                message.channel.send("We will defeat the Galra!")
       }
       
+});
+      
       if (message.content.includes("Zarkon")) {
                message.channel.send("We will defeat the Galra!")
       }
