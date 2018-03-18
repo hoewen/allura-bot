@@ -1,1 +1,1 @@
-worker: node Allura
+worker: node bot.js
