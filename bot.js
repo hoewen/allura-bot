@@ -2,15 +2,11 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('message', message => {
-      if (message.content.includes("zarkon")) {
+     if(message.content.toLowerCase().includes("zarkon"))
                message.channel.send("We will defeat the Galra!")
       }
       
       
-      if (message.content.includes("Zarkon")) {
-               message.channel.send("We will defeat the Galra!")
-      }
-
 });
 
 
