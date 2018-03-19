@@ -9,8 +9,9 @@ client.on('message', message => {
       })
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('424310753940733963').send('Welcome, Paladin' + member.displayName + ' to Voltron!')
-})
+       member.guild.defaultChannel.send(`Welcome to Voltron, paladin ${member}!`);
+       console.log(`${member.user.username} has joined the Voltron coalition`);
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
