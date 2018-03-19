@@ -6,7 +6,11 @@ client.on('message', message => {
      if(message.content.toLowerCase().includes("zarkon")) {
                message.channel.send("We will defeat the Galra!")
                }
-      })
+     
+     client.on('ready', () => {
+  console.log('I am ready!');
+     
+});
 
 client.on('guildMemberAdd', member => {
        member.guild.defaultChannel.send(`Welcome to Voltron, paladin ${member}!`);
